@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+  <nav class="page-header__nav main-nav">
+    <ul class="main-nav__list container">
+      <li class="main-nav__item"><a href="information.html" class="main-nav__link">информация</a></li>
+      <li class="main-nav__item"><a href="media.html" class="main-nav__link">фото и видео</a></li>
+      <li class="main-nav__item main-nav__item--logo"><img src="http://via.placeholder.com/138x70" alt="Лого"></li>
+      <li class="main-nav__item"><a href="state-map.html" class="main-nav__link">карта штата</a></li>
+      <li class="main-nav__item"><a href="state-inn.html" class="main-nav__link">гостиницы</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-header__title">
+    <!-- первый вариант -->
+    <img src="http://via.placeholder.com/188x45" alt="Welcome" class="page-header__phrase">
+    <img src="http://via.placeholder.com/176x30" alt="to the gorgerous" class="page-header__phrase">
+    <img src="http://via.placeholder.com/458x78" alt="sedona" class="page-header__phrase">
+    <img src="http://via.placeholder.com/296x80" alt="Because the Grand Canyon sucks!" class="page-header__phrase">
+    <!-- второй вариант -->
+    <!--<span class="page-header__phrase page-header__phrase--first">Welcome</span>
+    <span class="page-header__phrase page-header__phrase--second">to the gorgerous</span>
+    <span class="page-header__phrase page-header__phrase--third">sedona</span>
+    <span class="page-header__phrase page-header__phrase--fourth">"Because the Grand Canyon sucks!"</span>-->
+  </h1>
+</header>
+<main class="page-main">
+  <section class="page-main__section adventages">
+    <h2 class="adventages__title">седона-небольшой городок в аризоне, заслуживающий большего!</h2>
+    <p class="adventages__promo">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+    <ul class="adventages__list">
+      <li class="adventages__item feature feature--left">
+        <h3 class="feature__title">настоящий городок</h3>
+        <span class="feature__number">-№1-</span>
+        <p class="feature__description">седона-не аттракцион для туристов, там течет своя жизнь</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title">жилье</h3>
+        <p class="feature__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title">еда</h3>
+        <p class="feature__description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title">сувениры</h3>
+        <p class="feature__description">не только китайского, но и местного производства!</p>
+      </li>
+      <li class="adventages__item feature feature--right">
+        <h3 class="feature__title">там есть мост дьявола</h3>
+        <span class="feature__number">-№2-</span>
+        <p class="feature__description">да, по нему можно пройти! если конечно вы осмелитесь</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">небольшая площадь</h3>
+        <span class="feature__number">-№3-</span>
+        <p class="feature__description">все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">красивая дорога</h3>
+        <span class="feature__number">-№4-</span>
+        <p class="feature__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">мало туристов</h3>
+        <span class="feature__number">-№5-</span>
+        <p class="feature__description">большинство едет в гранд каньон и толпится там</p>
+      </li>
+    </ul>
+  </section>
+  <section class="page-main__sectiom hotel-search">
+    <h2 class="hotel-search__title visually-hidden">Форма поиска гостиницы</h2>
+    <p class="hotel-search__question">заинтересовались?</p>
+    <p class="hotel-search__promo">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <a href="#" class="hotel-search__map-link"><img src="http://via.placeholder.com/1200x475" alt="Карта" width=1200" height="475"></a>
+    <form action="" class="hotel-search__form form-block">
+      <h3 class="form-block__title">поиск гостиницы в седоне</h3>
+        <fieldset class="form-block__inputs">
+          <label for="" class="form-block__label">дата заезда:</label>
+          <input type="text" class="form-block__input form-block__input--date">
+          <label for="" class="form-block__label">дата выезда:</label>
+          <input type="text" class="form-block__input form-block__input--date">
+          <label for="" class="form-block__label">взрослые</label>
+          <div class="form-block__counter">
+            <span class="form-block__button">-</span>
+            <input type="text" class="form-block__input form-block__input--counter">
+            <span class="form-block__button">+</span>
+          </div>
+          <label for="" class="form-block__label">дети</label>
+          <div class="form-block__counter">
+            <span class="form-block__button">-</span>
+            <input type="text" class="form-block__input">
+            <span class="form-block__button">+</span>
+          </div>
+          <input type="submit" class="form-block__submit" value="найти">
+        </fieldset>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <p class="page-footer__hash">#visitsedona</p>
+  <ul class="page-footer__social social-list">
+    <li class="social-list__item"><a href="#" class="social-list__link">instagram</a></li>
+    <li class="social-list__item"><a href="#" class="social-list__link">facebook</a></li>
+    <li class="social-list__item"><a href="#" class="social-list__link">youtube</a></li>
+  </ul>
+  <a href="" class="page-footer__develop-by developer">website by<span class="developer__logo"></span></a>
+</footer>
+</body>
 </html>
