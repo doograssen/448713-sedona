@@ -11,19 +11,19 @@
 <header class="page-header">
   <nav class="page-header__nav main-nav">
     <ul class="main-nav__list container">
-      <li class="main-nav__item"><a href="information.html" class="main-nav__link">информация</a></li>
-      <li class="main-nav__item"><a href="media.html" class="main-nav__link">фото и видео</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="information.html">информация</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="media.html">фото и видео</a></li>
       <li class="main-nav__item main-nav__item--logo"><img src="http://via.placeholder.com/138x70" alt="Лого"></li>
-      <li class="main-nav__item"><a href="state-map.html" class="main-nav__link">карта штата</a></li>
-      <li class="main-nav__item"><a href="state-inn.html" class="main-nav__link">гостиницы</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="state-map.html">карта штата</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="state-inn.html">гостиницы</a></li>
     </ul>
   </nav>
   <h1 class="page-header__title">
     <!-- первый вариант -->
-    <img src="http://via.placeholder.com/188x45" alt="Welcome" class="page-header__phrase">
-    <img src="http://via.placeholder.com/176x30" alt="to the gorgerous" class="page-header__phrase">
-    <img src="http://via.placeholder.com/458x78" alt="sedona" class="page-header__phrase">
-    <img src="http://via.placeholder.com/296x80" alt="Because the Grand Canyon sucks!" class="page-header__phrase">
+    <img class="page-header__phrase" src="http://via.placeholder.com/188x45" alt="Welcome">
+    <img class="page-header__phrase" src="http://via.placeholder.com/176x30" alt="to the gorgerous">
+    <img class="page-header__phrase" src="http://via.placeholder.com/458x78" alt="sedona">
+    <img class="page-header__phrase" src="http://via.placeholder.com/296x80" alt="Because the Grand Canyon sucks!">
     <!-- второй вариант -->
     <!--<span class="page-header__phrase page-header__phrase--first">Welcome</span>
     <span class="page-header__phrase page-header__phrase--second">to the gorgerous</span>
@@ -83,23 +83,23 @@
     <form action="" class="hotel-search__form form-block">
       <h3 class="form-block__title">поиск гостиницы в седоне</h3>
         <fieldset class="form-block__inputs">
-          <label for="" class="form-block__label">дата заезда:</label>
-          <input type="text" class="form-block__input form-block__input--date">
-          <label for="" class="form-block__label">дата выезда:</label>
-          <input type="text" class="form-block__input form-block__input--date">
-          <label for="" class="form-block__label">взрослые</label>
+          <label class="form-block__label" for="check-in">дата заезда:</label>
+          <input class="form-block__input form-block__input--date" type="text" name="check-in" id="check-in">
+          <label class="form-block__label" for="check-out">дата выезда:</label>
+          <input class="form-block__input form-block__input--date" type="text" name="check-out" id="check-out">
+          <label class="form-block__label" for="adult">взрослые</label>
           <div class="form-block__counter">
             <span class="form-block__button">-</span>
-            <input type="text" class="form-block__input form-block__input--counter">
+            <input class="form-block__input form-block__input--counter" type="text" name="adult" id="adult">
             <span class="form-block__button">+</span>
           </div>
-          <label for="" class="form-block__label">дети</label>
+          <label class="form-block__label" for="kids">дети</label>
           <div class="form-block__counter">
             <span class="form-block__button">-</span>
-            <input type="text" class="form-block__input">
+            <input class="form-block__input"  type="text" name="kids" id="kids">
             <span class="form-block__button">+</span>
           </div>
-          <input type="submit" class="form-block__submit" value="найти">
+          <input class="form-block__submit" type="submit" value="найти">
         </fieldset>
     </form>
   </section>
@@ -107,9 +107,9 @@
 <footer class="page-footer">
   <p class="page-footer__hash">#visitsedona</p>
   <ul class="page-footer__social social-list">
-    <li class="social-list__item"><a href="#" class="social-list__link">instagram</a></li>
-    <li class="social-list__item"><a href="#" class="social-list__link">facebook</a></li>
-    <li class="social-list__item"><a href="#" class="social-list__link">youtube</a></li>
+    <li class="social-list__item"><a class="social-list__link" href="#" >instagram</a></li>
+    <li class="social-list__item"><a class="social-list__link" href="#">facebook</a></li>
+    <li class="social-list__item"><a class="social-list__link" href="#">youtube</a></li>
   </ul>
   <a href="" class="page-footer__develop-by developer">website by<span class="developer__logo"></span></a>
 </footer>
