@@ -1,0 +1,69 @@
+body {
+  font-family: "PT Sans";
+}
+
+.form-block {
+  width: 568px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0 54px;
+  border: 1px solid #000000;
+}
+
+
+.form-block__inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-block__label {
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-basis: 111px;
+}
+
+.form-block__label:last-of-type {
+  padding-left: 50px;
+  flex-basis: 35px;
+  padding-right: 22px;
+}
+
+.form-block__input {
+  flex-basis: 340px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  min-height: 38px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form-block__input--counter {
+ width: 38px;
+}
+
+.form-block__counter {
+  flex-basis: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-block__button{
+  font-weight: bold;
+  font-size: 24px;
+  color: #a9a9a9;
+  width: 37px;
+  line-height: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  padding-right: 2px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.form-block__submit {
+  width: 458px;
+}
