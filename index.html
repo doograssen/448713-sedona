@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+  <nav class="page-header__nav main-nav">
+    <ul class="main-nav__list container">
+      <li class="main-nav__item"><a class="main-nav__link" href="information.html">информация</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="media.html">фото и видео</a></li>
+      <li class="main-nav__item main-nav__item--logo"><img src="http://via.placeholder.com/138x70" width="138"
+                                                           height="70" alt="Логотип"></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="state-map.html">карта штата</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-header__title">
+    <!-- первый вариант -->
+    <img class="page-header__phrase" src="http://via.placeholder.com/188x45" width="188" height="45" alt="Welcome">
+    <img class="page-header__phrase" src="http://via.placeholder.com/176x30" width="176" height="30"
+         alt="to the gorgerous">
+    <img class="page-header__phrase" src="http://via.placeholder.com/458x78" width="458" height="78" alt="sedona">
+    <img class="page-header__phrase" src="http://via.placeholder.com/296x80" width="296" height="80"
+         alt="Because the Grand Canyon sucks!">
+  </h1>
+</header>
+<main class="page-main">
+  <section class="page-main__section adventages">
+    <h2 class="adventages__title">седона-небольшой городок в аризоне, заслуживающий большего!</h2>
+    <p class="adventages__promo">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+    <ul class="adventages__list">
+      <li class="adventages__item feature feature--left">
+        <h3 class="feature__title">настоящий городок</h3>
+        <span class="feature__number">-№1-</span>
+        <p class="feature__description">седона-не аттракцион для туристов, там течет своя жизнь</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title feature__title--house">жилье</h3>
+        <p class="feature__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title feature__title--burger">еда</h3>
+        <p class="feature__description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </li>
+      <li class="adventages__item feature feature--details">
+        <h3 class="feature__title feature__title--present">сувениры</h3>
+        <p class="feature__description">не только китайского, но и местного производства!</p>
+      </li>
+      <li class="adventages__item feature feature--right">
+        <h3 class="feature__title">там есть мост дьявола</h3>
+        <span class="feature__number">-№2-</span>
+        <p class="feature__description">да, по нему можно пройти! если конечно вы осмелитесь</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">небольшая площадь</h3>
+        <span class="feature__number">-№3-</span>
+        <p class="feature__description">все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">красивая дорога</h3>
+        <span class="feature__number">-№4-</span>
+        <p class="feature__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+      </li>
+      <li class="adventages__item feature">
+        <h3 class="feature__title">мало туристов</h3>
+        <span class="feature__number">-№5-</span>
+        <p class="feature__description">большинство едет в гранд каньон и толпится там</p>
+      </li>
+    </ul>
+  </section>
+  <section class="page-main__sectiom hotel-search">
+    <h2 class="hotel-search__title visually-hidden">Форма поиска гостиницы</h2>
+    <p class="hotel-search__question">заинтересовались?</p>
+    <p class="hotel-search__promo">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      седоне</p>
+    <button class="hotel-search__button">поиск гостиницы в седоне</button>
+    <form action="https://echo.htmlacademy.ru" class="hotel-search__form form-modal">
+      <div class="form-modal__field">
+        <label class="form-modal__label" for="check-in">дата заезда:</label>
+        <input class="form-modal__input" id="check-in" name="check-in" type="text" required>
+        <span class="form-modal__button form-modal__button--calendar"></span>
+      </div>
+      <div class="form-modal__field">
+        <label class="form-modal__label" for="check-out">дата выезда:</label>
+        <input class="form-modal__input" id="check-out" name="check-out" type="text" required>
+        <span class="form-modal__button form-modal__button--calendar"></span>
+      </div>
+      <div class="form-modal__field">
+        <label class="form-modal__label" for="adult">взрослые:</label>
+        <p class="form-modal__counter">
+          <span class="form-modal__button form-modal__button--minus">&ndash;</span>
+          <input class="form-modal__input form-modal__input--counter" id="adult" name="adult" type="text">
+          <span class="form-modal__button form-modal__button--plus">+</span>
+        </p>
+      </div>
+      <div class="form-modal__field">
+        <label class="form-modal__label" for="kids">дети:</label>
+        <p class="form-modal__counter">
+          <span class="form-modal__button form-modal__button--minus">&ndash;</span>
+          <input class="form-modal__input form-modal__input--counter" id="kids" name="kids" type="text">
+          <span class="form-modal__button form-modal__button--plus">+</span>
+        </p>
+      </div>
+      <input class="form-modal__submit" type="submit" value="найти">
+    </form>
+    <a href="#" class="hotel-search__map-link"><img src="http://via.placeholder.com/1200x475" alt="Карта" width="1200"
+                                                    height="475"></a>
+  </section>
+</main>
+<footer class="page-footer">
+  <p class="page-footer__hash">#visitsedona</p>
+  <ul class="page-footer__social social-list">
+    <li class="social-list__item"><a class="social-list__link" href="#">instagram</a></li>
+    <li class="social-list__item"><a class="social-list__link" href="#">facebook</a></li>
+    <li class="social-list__item"><a class="social-list__link" href="#">youtube</a></li>
+  </ul>
+  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by</a>
+</footer>
+</body>
 </html>
