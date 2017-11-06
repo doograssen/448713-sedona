@@ -13,7 +13,8 @@
     <ul class="main-nav__list container">
       <li class="main-nav__item"><a class="main-nav__link" href="information.html">информация</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="media.html">фото и видео</a></li>
-      <li class="main-nav__item main-nav__item--logo"><img src="http://via.placeholder.com/138x70" alt="Логотип"></li>
+      <li class="main-nav__item main-nav__item--logo"><img src="http://via.placeholder.com/138x70" width="138"
+                                                           height="70" alt="Логотип"></li>
       <li class="main-nav__item"><a class="main-nav__link" href="state-map.html">карта штата</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
     </ul>
@@ -63,29 +64,29 @@
       <strong class="result__amount">найдено: 3</strong>
       <div class="result__sorting sorting">
         <p class="sorting__subject">сортировка:</p>
-        <a class="sorting__type sorting__type--active" href="">по цене</a>
-        <a class="sorting__type" href="">по типу</a>
-        <a class="sorting__type" href="">по рейтингу</a>
+        <a class="sorting__type sorting__type--active" href="#">по цене</a>
+        <a class="sorting__type" href="#">по типу</a>
+        <a class="sorting__type" href="#">по рейтингу</a>
         <div class="sorting__direction">
-          <a class="sorting__asc" href="">по возрастанию</a>
-          <a class="sorting__desc" href="">по убыванию</a>
+          <a class="sorting__asc" href="#">по возрастанию</a>
+          <a class="sorting__desc" href="#">по убыванию</a>
         </div>
       </div>
     </header>
     <ul class="result__list">
       <li class="result__item card">
-        <img class="card__foto" src="http://via.placeholder.com/135x90" alt="">
+        <img class="card__foto" src="http://via.placeholder.com/135x90" width="135" height="90" alt="">
         <div class="card__description">
           <table>
-            <caption>Amara Resort & Spa</caption>
+            <caption class="card__name">Amara Resort & Spa</caption>
             <tbody>
             <tr>
-              <td>гостиница</td>
-              <td>от 4000 р.</td>
+              <td class="card__type">гостиница</td>
+              <td class="card__min-cost">от 4000 р.</td>
             </tr>
             <tr>
-              <td>подробнее</td>
-              <td>забронировать</td>
+              <td class="card__detail"><a href="#">подробнее</a></td>
+              <td class="card__reserve"><a href="#">забронировать</a></td>
             </tr>
             </tbody>
           </table>
@@ -101,26 +102,25 @@
           <p class="rating__text">рейтинг: 8,5</p>
         </div>
       </li>
-      <li class="result__item card"><img src="http://via.placeholder.com/135x90" alt="" class="card__foto">
+      <li class="result__item card">
+        <img class="card__foto" src="http://via.placeholder.com/135x90" width="135" height="90" alt="">
         <div class="card__description">
           <table>
-            <caption>Desert Quail Inn</caption>
+            <caption class="card__name">Desert Quail Inn</caption>
             <tbody>
             <tr>
-              <td>мотель</td>
-              <td>от 3000 р.</td>
+              <td class="card__type">мотель</td>
+              <td class="card__min-cost">от 3000 р.</td>
             </tr>
             <tr>
-              <td>подробнее</td>
-              <td>забронировать</td>
+              <td class="card__detail"><a href="#">подробнее</a></td>
+              <td class="card__reserve"><a href="#">забронировать</a></td>
             </tr>
             </tbody>
           </table>
         </div>
         <div class="card__rating rating">
           <p class="rating__in-stars">
-            <span class="rating__star"></span>
-            <span class="rating__star"></span>
             <span class="rating__star"></span>
             <span class="rating__star"></span>
             <span class="rating__star"></span>
@@ -129,27 +129,24 @@
         </div>
       </li>
       <li class="result__item card">
-        <img src="http://via.placeholder.com/135x90" alt="" class="card__foto">
+        <img class="card__foto" src="http://via.placeholder.com/135x90" width="135" height="90" alt="">
         <div class="card__description">
           <table>
-            <caption>Villas at Poco Diablo</caption>
+            <caption class="card__name">Villas at Poco Diablo</caption>
             <tbody>
             <tr>
-              <td>апартаменты</td>
-              <td>от 2000 р.</td>
+              <td class="card__type">апартаменты</td>
+              <td class="card__min-cost">от 2000 р.</td>
             </tr>
             <tr>
-              <td>подробнее</td>
-              <td>забронировать</td>
+              <td class="card__detail"><a href="#">подробнее</a></td>
+              <td class="card__reserve"><a href="#">забронировать</a></td>
             </tr>
             </tbody>
           </table>
         </div>
         <div class="card__rating rating">
           <p class="rating__in-stars">
-            <span class="rating__star"></span>
-            <span class="rating__star"></span>
-            <span class="rating__star"></span>
             <span class="rating__star"></span>
             <span class="rating__star"></span>
           </p>
@@ -166,7 +163,7 @@
     <li class="social-list__item"><a class="social-list__link" href="#">facebook</a></li>
     <li class="social-list__item"><a class="social-list__link" href="#">youtube</a></li>
   </ul>
-  <a class="page-footer__develop-by developer" href="">website by</a>
+  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by</a>
 </footer>
 </body>
 </html>
