@@ -1,0 +1,116 @@
+/* модуль visually-hidden*/
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* модуль hotel-search*/
+
+.hotel-search__button {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #766357;
+}
+
+/* модуль form-modal*/
+.form-modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 568px;
+  margin: 0 auto;
+  padding: 0 54px;
+  padding-top: 55px;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-modal__field {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form-modal__field:last-of-type>.form-modal__label  {
+  flex-shrink: 1;
+  padding-left: 70px;
+}
+
+.form-modal__label {
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: bold;
+  flex-basis: 112px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.form-modal__input {
+  flex-grow: 1;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form-modal__input--counter {
+  width: 38px;
+}
+
+.form-modal__counter {
+  flex-basis: 115px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.form-modal__button{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  color: #a9a9a9;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.form-modal__submit {
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 55px;
+  margin-top: 24px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #81b3d2;
+}
