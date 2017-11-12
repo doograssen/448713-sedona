@@ -102,6 +102,7 @@ body {
 
 .form-modal__submit {
   width: 100%;
+  font-family: "PT Sans", Tahoma, sans-serif;;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
