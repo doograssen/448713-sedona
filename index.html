@@ -19,7 +19,7 @@
       <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
     </ul>
   </nav>
-  <h1 class="page-header__title">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
+  <h1 class="page-header__title visually-hidden">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
 </header>
 <main class="page-main">
   <section class="page-main__section adventages">
@@ -85,17 +85,17 @@
       <div class="form-modal__field">
         <label class="form-modal__label" for="adult">взрослые:</label>
         <p class="form-modal__counter">
-          <span class="form-modal__button form-modal__button--minus">&minus;</span>
+          <span class="form-modal__button form-modal__button--minus" aria-label="уменьшить" tabindex="0">&minus;</span>
           <input class="form-modal__input form-modal__input--counter" id="adult" name="adult" type="text">
-          <span class="form-modal__button form-modal__button--plus">+</span>
+          <span class="form-modal__button form-modal__button--plus" aria-label="увеличить" tabindex="0">+</span>
         </p>
       </div>
       <div class="form-modal__field">
         <label class="form-modal__label" for="kids">дети:</label>
         <p class="form-modal__counter">
-          <span class="form-modal__button form-modal__button--minus">&minus;</span>
+          <span class="form-modal__button form-modal__button--minus" aria-label="уменьшить" tabindex="0">&minus;</span>
           <input class="form-modal__input form-modal__input--counter" id="kids" name="kids" type="text">
-          <span class="form-modal__button form-modal__button--plus">+</span>
+          <span class="form-modal__button form-modal__button--plus"  aria-label="увеличить" tabindex="0">+</span>
         </p>
       </div>
       <input class="form-modal__submit" type="submit" value="найти">
@@ -107,11 +107,11 @@
 <footer class="page-footer">
   <p class="page-footer__hash">#visitsedona</p>
   <ul class="page-footer__social social-list">
-    <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#">instagram</a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#">facebook</a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#">youtube</a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#" aria-label="instagram"></a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#" aria-label="facebook"></a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#" aria-label="youtube"></a></li>
   </ul>
-  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by</a>
+  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by <span class="visually-hidden">html academy</span></a>
 </footer>
 </body>
 </html>
