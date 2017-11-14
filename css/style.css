@@ -17,6 +17,67 @@ body {
   text-transform: uppercase;
 }
 
+/* блок main-nav */
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*  блок adventages */
+
+.adventages__title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.adventages__promo {
+  font-size: 14px;
+  line-heght: 26px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.adventages__list {
+  list-style: none;
+}
+
+/* блок  feature  */
+
+.feature {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.feature--left{
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feature--right{
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feature--details {
+  background-color: #ffffff;
+}
+
+.feature__title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+
 /* модуль hotel-search*/
 
 .hotel-search__button {
@@ -33,6 +94,17 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: #766357;
+}
+
+.hotel-search__question{
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-search__promo {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
 }
 
 /* модуль form-modal*/
@@ -96,6 +168,7 @@ body {
   width: 38px;
   height: 38px;
   flex-shrink: 0;
+  border: none;
   background-color: #f2f2f2;
   text-align: center;
 }
@@ -114,4 +187,150 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: #81b3d2;
+}
+
+/* hotel-filter */
+
+.hotel-filter {
+  color: #ffffff;
+  background-image: url("../img/filter_photo.jpg");
+}
+
+.hotel-filter__block,
+.hotel-filter__slider{
+  border: none;
+}
+
+.hotel-filter__caption {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hotel-filter__label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.hotel-filter__input {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.hotel-filter__input--min {
+  border-right: none;
+}
+
+.hotel-filter__input--max {
+  border-left: none;
+}
+
+.hotel-filter__submit {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+/* блок result */
+
+.result__amount {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.result__list {
+  list-style: none;
+}
+
+/*блок  sorting */
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting__subject {
+  color: #000000;
+}
+
+.sorting__type {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting__type--active {
+  color: #81b3d2;
+  border: none;
+}
+
+/* блок card*/
+
+.card__name {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.card__type,
+.card__min-cost {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.card__detail {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #81b3d2;
+}
+
+.card__reserve {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #766357;
+}
+
+/* блок rating */
+
+.rating__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+}
+
+/* блок footer */
+
+.page-footer__hash {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.page-footer__develop-by {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* блок social-list */
+
+.social-list {
+  list-style: none;
 }
