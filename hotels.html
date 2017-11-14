@@ -52,8 +52,8 @@
             <input class="hotel-filter__input hotel-filter__input--max" id="max-cost" name="max-cost" type="text">
           </div>
           <div class="hotel-filter__handles">
-            <span class="hotel-filter__handle hotel-filter__handle--min"></span>
-            <span class="hotel-filter__handle hotel-filter__handle--max"></span>
+            <span class="hotel-filter__handle hotel-filter__handle--min" tabindex="0" aria-label="минимальная стоимость"></span>
+            <span class="hotel-filter__handle hotel-filter__handle--max" tabindex="0" aria-label="максимальная стоимость"></span>
           </div>
         </fieldset>
         <input class="hotel-filter__submit" type="submit">
@@ -70,8 +70,8 @@
         <a class="sorting__type" href="#">по типу</a>
         <a class="sorting__type" href="#">по рейтингу</a>
         <div class="sorting__direction">
-          <a class="sorting__asc" href="#">по возрастанию</a>
-          <a class="sorting__desc" href="#">по убыванию</a>
+          <a class="sorting__asc" href="#" aria-label="по возрастанию"></a>
+          <a class="sorting__desc" href="#" aria-label="по убыванию"></a>
         </div>
       </div>
     </header>
@@ -127,11 +127,11 @@
 <footer class="page-footer">
   <p class="page-footer__hash">#visitsedona</p>
   <ul class="page-footer__social social-list">
-    <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#">instagram</a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#">facebook</a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#">youtube</a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#" aria-label="instagram"></a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#" aria-label="facebook"></a></li>
+    <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#" aria-label="youtube"></a></li>
   </ul>
-  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by</a>
+  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by <span class="visually-hidden">html academy</span></a>
 </footer>
 </body>
 </html>
