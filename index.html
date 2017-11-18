@@ -8,103 +8,114 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--index">
   <nav class="page-header__nav main-nav">
-    <ul class="main-nav__list container">
-      <li class="main-nav__item"><a class="main-nav__link" href="information.html">информация</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="media.html">фото и видео</a></li>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="information.html">информация</a></li>
+      <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="media.html">фото и видео</a></li>
       <li class="main-nav__item main-nav__item--logo"><img src="img/logo.png" width="138"
                                                            height="70" alt="Логотип"></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="state-map.html">карта штата</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
+      <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="state-map.html">карта штата</a></li>
+      <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="hotels.html">гостиницы</a></li>
     </ul>
   </nav>
   <h1 class="page-header__title visually-hidden">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
 </header>
 <main class="page-main">
-  <section class="page-main__section adventages">
-    <h2 class="adventages__title">седона-небольшой городок в аризоне, заслуживающий большего!</h2>
-    <p class="adventages__promo">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-    <ul class="adventages__list">
-      <li class="adventages__item feature feature--left">
+  <section class="page-main__section advantages">
+    <h2 class="advantages__title">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</h2>
+    <p class="advantages__promo">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+    <ul class="advantages__list">
+      <li class="advantages__item feature feature--left">
         <h3 class="feature__title">настоящий городок</h3>
-        <span class="feature__number">-№1-</span>
-        <p class="feature__description">седона-не аттракцион для туристов, там течет своя жизнь</p>
+        <span class="feature__number">&mdash; №1 &mdash;</span>
+        <p class="feature__description">седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
       </li>
-      <li class="adventages__item feature feature--details">
+      <li class="advantages__item feature feature--details">
         <h3 class="feature__title feature__title--house">жилье</h3>
         <p class="feature__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </li>
-      <li class="adventages__item feature feature--details">
+      <li class="advantages__item feature feature--details">
         <h3 class="feature__title feature__title--burger">еда</h3>
         <p class="feature__description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </li>
-      <li class="adventages__item feature feature--details">
+      <li class="advantages__item feature feature--details">
         <h3 class="feature__title feature__title--present">сувениры</h3>
         <p class="feature__description">не только китайского, но и местного производства!</p>
       </li>
-      <li class="adventages__item feature feature--right">
+      <li class="advantages__item feature feature--right">
         <h3 class="feature__title">там есть мост дьявола</h3>
-        <span class="feature__number">-№2-</span>
+        <span class="feature__number">&mdash; №2 &mdash;</span>
         <p class="feature__description">да, по нему можно пройти! если конечно вы осмелитесь</p>
       </li>
-      <li class="adventages__item feature">
+      <li class="advantages__item feature">
         <h3 class="feature__title">небольшая площадь</h3>
-        <span class="feature__number">-№3-</span>
+        <span class="feature__number">&mdash; №3 &mdash;</span>
         <p class="feature__description">все достопримечательности находятся очень близко</p>
       </li>
-      <li class="adventages__item feature">
+      <li class="advantages__item feature">
         <h3 class="feature__title">красивая дорога</h3>
-        <span class="feature__number">-№4-</span>
+        <span class="feature__number">&mdash; №4 &mdash;</span>
         <p class="feature__description">ехать в седону из лас-вегаса совсем не скучно!</p>
       </li>
-      <li class="adventages__item feature">
+      <li class="advantages__item feature">
         <h3 class="feature__title">мало туристов</h3>
-        <span class="feature__number">-№5-</span>
+        <span class="feature__number">&mdash; №5 &mdash;</span>
         <p class="feature__description">большинство едет в гранд каньон и толпится там</p>
       </li>
     </ul>
   </section>
-  <section class="page-main__sectiom hotel-search">
+  <section class="page-main__section hotel-search">
     <h2 class="hotel-search__title visually-hidden">Форма поиска гостиницы</h2>
     <p class="hotel-search__question">заинтересовались?</p>
-    <p class="hotel-search__promo">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-      седоне</p>
+    <p class="hotel-search__promo"><span class="hotel-search__promo-frase">укажите предполагаемые даты поездки,</span><span class="hotel-search__promo-frase">и мы покажем вам лучшие предложения гостиниц в
+      седоне</span></p>
     <button class="hotel-search__button">поиск гостиницы в седоне</button>
-    <form action="https://echo.htmlacademy.ru" class="hotel-search__form form-modal">
-      <div class="form-modal__field">
-        <label class="form-modal__label" for="check-in">дата заезда:</label>
-        <input class="form-modal__input" id="check-in" name="check-in" type="text" required>
-        <button class="form-modal__button form-modal__button--calendar" type="button" aria-label="календарь"></button>
-      </div>
-      <div class="form-modal__field">
-        <label class="form-modal__label" for="check-out">дата выезда:</label>
-        <input class="form-modal__input" id="check-out" name="check-out" type="text" required>
-        <button class="form-modal__button form-modal__button--calendar" type="button" aria-label="календарь"></button>
-      </div>
-      <div class="form-modal__field">
-        <label class="form-modal__label" for="adult">взрослые:</label>
-        <p class="form-modal__counter">
-          <button class="form-modal__button form-modal__button--minus" type="button" aria-label="уменьшить" tabindex="0">&minus;</button>
-          <input class="form-modal__input form-modal__input--counter" id="adult" name="adult" type="text">
-          <button class="form-modal__button form-modal__button--plus" type="button" aria-label="увеличить" tabindex="0">+</button>
-        </p>
-      </div>
-      <div class="form-modal__field">
-        <label class="form-modal__label" for="kids">дети:</label>
-        <p class="form-modal__counter">
-          <button class="form-modal__button form-modal__button--minus" type="button" aria-label="уменьшить" tabindex="0">&minus;</button>
-          <input class="form-modal__input form-modal__input--counter" id="kids" name="kids" type="text">
-          <button class="form-modal__button form-modal__button--plus" type="button" aria-label="увеличить" tabindex="0">+</button>
-        </p>
-      </div>
-      <input class="form-modal__submit" type="submit" value="найти">
-    </form>
-    <a href="#" class="hotel-search__map-link"><img src="img/map.jpg" alt="Карта" width="1200"
-                                                    height="593"></a>
+    <div class="hotel-search__container">
+      <form action="https://echo.htmlacademy.ru" class="hotel-search__form form-modal">
+        <div class="form-modal__field">
+          <label class="form-modal__label" for="check-in">дата заезда:</label>
+          <input class="form-modal__input" id="check-in" name="check-in" type="text" required>
+          <button class="form-modal__button form-modal__button--calendar" type="button"
+                  aria-label="календарь"></button>
+        </div>
+        <div class="form-modal__field">
+          <label class="form-modal__label" for="check-out">дата выезда:</label>
+          <input class="form-modal__input" id="check-out" name="check-out" type="text" required>
+          <button class="form-modal__button form-modal__button--calendar" type="button"
+                  aria-label="календарь"></button>
+        </div>
+        <div class="form-modal__field">
+          <label class="form-modal__label" for="adult">взрослые:</label>
+          <p class="form-modal__counter">
+            <button class="form-modal__button form-modal__button--minus" type="button" aria-label="уменьшить"
+                    tabindex="0">&minus;
+            </button>
+            <input class="form-modal__input form-modal__input--counter" id="adult" name="adult" type="text">
+            <button class="form-modal__button form-modal__button--plus" type="button" aria-label="увеличить"
+                    tabindex="0">+
+            </button>
+          </p>
+        </div>
+        <div class="form-modal__field">
+          <label class="form-modal__label" for="kids">дети:</label>
+          <p class="form-modal__counter">
+            <button class="form-modal__button form-modal__button--minus" type="button" aria-label="уменьшить"
+                    tabindex="0">&minus;
+            </button>
+            <input class="form-modal__input form-modal__input--counter" id="kids" name="kids" type="text">
+            <button class="form-modal__button form-modal__button--plus" type="button" aria-label="увеличить"
+                    tabindex="0">+
+            </button>
+          </p>
+        </div>
+        <input class="form-modal__submit" type="submit" value="найти">
+      </form>
+      <a class="hotel-search__map-link" href="#"><img src="img/map.jpg" alt="Карта" width="1200" height="593"></a>
+    </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-footer--index">
   <p class="page-footer__hash">#visitsedona</p>
   <ul class="page-footer__social social-list">
     <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#" aria-label="instagram"></a></li>
