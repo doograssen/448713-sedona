@@ -484,20 +484,46 @@ body {
   background-image: url("../img/filter_photo.jpg");
 }
 
+.hotel-filter__form {
+  display: flex;
+}
+
 .hotel-filter__block,
 .hotel-filter__slider{
   border: none;
 }
 
+.hotel-filter__block,
+.hotel-filter__container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 6%;
+  padding-right: 4%;
+}
+
+.hotel-filter__container {
+  flex-grow: 1;
+  align-items: flex-end;
+  padding-right: 6%;
+}
+
 .hotel-filter__caption {
   font-size: 16px;
   line-height: 21px;
+  margin-top: 27px;
+  margin-bottom: 20px;
 }
 
 .hotel-filter__label {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  padding: 5px 0;
+  padding-left: 40px;
+  margin-bottom: 15px;
 }
 
 .hotel-filter__input {
@@ -505,6 +531,7 @@ body {
   line-height: 21px;
   font-weight: normal;
   color: #ffffff;
+  width: 160px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -527,6 +554,7 @@ body {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  margin: 0 auto;
 }
 
 .hotel-filter__submit:hover {
