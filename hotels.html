@@ -8,131 +8,174 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header">
-  <nav class="page-header__nav main-nav">
-    <ul class="main-nav__list container">
-      <li class="main-nav__item"><a class="main-nav__link" href="information.html">информация</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="media.html">фото и видео</a></li>
-      <li class="main-nav__item main-nav__item--logo"><img src="img/logo.png" width="138"
-                                                           height="70" alt="Логотип"></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="state-map.html">карта штата</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">гостиницы</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="page-main">
-  <section class="page-main__section hotel-filter">
-    <h2 class="hotel-filter__title visually-hidden">форма поиска жилья</h2>
-    <form action="https://echo.htmlacademy.ru" class="hotel-filter__form">
-      <fieldset class="hotel-filter__block">
-        <legend class="hotel-filter__title">инфраструктура:</legend>
-        <input class="hotel-filter__checkbox visually-hidden" id="pool" name="pool" type="checkbox">
-        <label class="hotel-filter__label" for="pool">бассейн</label>
-        <input class="hotel-filter__checkbox visually-hidden" id="parking" name="parking" type="checkbox">
-        <label class="hotel-filter__label" for="parking">парковка</label>
-        <input class="hotel-filter__checkbox visually-hidden" id="wi-fi" name="wi-fi" type="checkbox">
-        <label class="hotel-filter__label" for="wi-fi">wi-fi</label>
-      </fieldset>
-      <fieldset class="hotel-filter__block">
-        <legend class="hotel-filter__title">тип жилья:</legend>
-        <input class="hotel-filter__checkbox visually-hidden" id="hotel" name="hotel" type="checkbox">
-        <label class="hotel-filter__label" for="hotel">гостиница</label>
-        <input class="hotel-filter__checkbox visually-hidden" id="motel" name="motel" type="checkbox">
-        <label class="hotel-filter__label" for="motel">мотель</label>
-        <input class="hotel-filter__checkbox visually-hidden" id="apartment" name="apartment" type="checkbox">
-        <label class="hotel-filter__label" for="apartment">апартаменты</label>
-      </fieldset>
-      <div class="hotel-search__container">
-        <fieldset class="hotel-filter__slider">
-          <legend class="hotel-filter__title">стоимость в сутки(р):</legend>
-          <div class="hotel-filter__slider-value">
-            <label class="hotel-filter__label visually-hidden" for="min-cost">минимальная стоимость</label>
-            <input class="hotel-filter__input hotel-filter__input--min" id="min-cost" name="min-cost" type="text">
-            <label class="hotel-filter__label visually-hidden" for="max-cost">максимальная стоимость</label>
-            <input class="hotel-filter__input hotel-filter__input--max" id="max-cost" name="max-cost" type="text">
-          </div>
-          <div class="hotel-filter__handles">
-            <span class="hotel-filter__handle hotel-filter__handle--min" tabindex="0" aria-label="минимальная стоимость"></span>
-            <span class="hotel-filter__handle hotel-filter__handle--max" tabindex="0" aria-label="максимальная стоимость"></span>
-          </div>
-        </fieldset>
-        <input class="hotel-filter__submit" type="submit">
-      </div>
-    </form>
-  </section>
-  <section class="page-main__section result">
-    <header class="result__header">
-      <h2 class="result__title visually-hidden">результаты поиска</h2>
-      <strong class="result__amount">найдено: 3</strong>
-      <div class="result__sorting sorting">
-        <p class="sorting__subject">сортировка:</p>
-        <a class="sorting__type sorting__type--active" href="#">по цене</a>
-        <a class="sorting__type" href="#">по типу</a>
-        <a class="sorting__type" href="#">по рейтингу</a>
-        <div class="sorting__direction">
-          <a class="sorting__asc" href="#" aria-label="по возрастанию"></a>
-          <a class="sorting__desc" href="#" aria-label="по убыванию"></a>
-        </div>
-      </div>
+  <div class="page__container">
+    <header class="page-header">
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="information.html">информация</a>
+          </li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="media.html">фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo"><img src="img/logo.png" width="138"
+                                                               height="70" alt="Логотип"></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="state-map.html">карта штата</a>
+          </li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--right main-nav__link--active"
+                                        href="hotels.html">гостиницы</a></li>
+        </ul>
+      </nav>
     </header>
-    <ul class="result__list">
-      <li class="result__item card">
-        <img class="card__foto" src="img/amara_resort.jpg" width="135" height="90" alt="">
-        <div class="card__description">
-          <h3 class="card__name">Amara Resort & Spa</h3>
-            <p><span class="card__type">гостиница</span><span class="card__min-cost">от 4000 р.</span></p>
-            <div class="card__buttons">
-              <a class="card__detail" href="#">подробнее</a>
-              <a class="card__reserve" href="#">забронировать</a>
+    <main class="page-main">
+      <section class="page-main__section hotel-filter">
+        <h2 class="hotel-filter__title visually-hidden">форма поиска жилья</h2>
+        <form action="https://echo.htmlacademy.ru" class="hotel-filter__form">
+          <fieldset class="hotel-filter__block">
+            <legend class="hotel-filter__caption">инфраструктура:</legend>
+            <input class="hotel-filter__checkbox visually-hidden" id="pool" name="pool" type="checkbox" checked>
+            <label class="hotel-filter__label" for="pool">бассейн</label>
+            <input class="hotel-filter__checkbox visually-hidden" id="parking" name="parking" type="checkbox">
+            <label class="hotel-filter__label" for="parking">парковка</label>
+            <input class="hotel-filter__checkbox visually-hidden" id="wi-fi" name="wi-fi" type="checkbox">
+            <label class="hotel-filter__label" for="wi-fi">wi-fi</label>
+          </fieldset>
+          <fieldset class="hotel-filter__block">
+            <legend class="hotel-filter__caption">тип жилья:</legend>
+            <input class="hotel-filter__checkbox visually-hidden" id="hotel" name="hotel" type="checkbox" checked>
+            <label class="hotel-filter__label" for="hotel">гостиница</label>
+            <input class="hotel-filter__checkbox visually-hidden" id="motel" name="motel" type="checkbox" checked>
+            <label class="hotel-filter__label" for="motel">мотель</label>
+            <input class="hotel-filter__checkbox visually-hidden" id="apartment" name="apartment" type="checkbox" checked>
+            <label class="hotel-filter__label" for="apartment">апартаменты</label>
+          </fieldset>
+          <div class="hotel-filter__container">
+            <fieldset class="hotel-filter__slider">
+              <legend class="hotel-filter__caption">стоимость в сутки (р):</legend>
+              <div class="hotel-filter__slider-value">
+                <label class="hotel-filter__label visually-hidden" for="min-cost">минимальная стоимость</label>
+                <input class="hotel-filter__input hotel-filter__input--min" id="min-cost" name="min-cost" type="text"
+                       placeholder="от 0">
+                <label class="hotel-filter__label visually-hidden" for="max-cost">максимальная стоимость</label>
+                <input class="hotel-filter__input hotel-filter__input--max" id="max-cost" name="max-cost" type="text"
+                       placeholder="до 3000">
+              </div>
+              <div class="hotel-filter__handles">
+                <span class="hotel-filter__handle hotel-filter__handle--min ally-text" tabindex="0"
+                      aria-label="минимальная стоимость">&bull;</span>
+                <span class="hotel-filter__handle hotel-filter__handle--max ally-text" tabindex="0"
+                      aria-label="максимальная стоимость">&bull;</span>
+              </div>
+            </fieldset>
+            <input class="hotel-filter__submit" type="submit" value=" показать">
+          </div>
+        </form>
+      </section>
+      <section class="page-main__section result">
+        <header class="result__header">
+          <h2 class="result__title visually-hidden">результаты поиска</h2>
+          <strong class="result__amount">найдено: 3</strong>
+          <div class="result__sorting sorting">
+            <p class="sorting__subject">сортировка:</p>
+            <a class="sorting__type sorting__type--active" href="#">по цене</a>
+            <a class="sorting__type" href="#">по типу</a>
+            <a class="sorting__type" href="#">по рейтингу</a>
+            <div class="sorting__direction">
+              <a class="sorting__asc ally-text" href="#">
+                <svg enable-background="new 0 0 11 10" height="10" viewBox="0 0 11 10" width="11"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="m5.5 0-5.5 10h11z" fill="#cacaca"/>
+                </svg>
+                по возрастанию</a>
+              <a class="sorting__desc sorting__desc--active ally-text" href="#">
+                <svg enable-background="new 0 0 11 10" height="10" viewBox="0 0 11 10" width="11"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="m5.5 10-5.5-10h11" fill="#cacaca"/>
+                </svg>
+                по убыванию</a>
             </div>
-        </div>
-        <div class="card__rating rating">
-          <p class="rating__in-stars rating__in-stars--four">четыре звезды</p>
-          <p class="rating__text">рейтинг: 8,5</p>
-        </div>
-      </li>
-      <li class="result__item card">
-        <img class="card__foto" src="img/quail_inn.jpg" width="135" height="90" alt="">
-        <div class="card__description">
-          <h3 class="card__name">Desert Quail Inn</h3>
-          <p><span class="card__type">мотель</span><span class="card__min-cost">от 3000 р.</span></p>
-          <div class="card__buttons">
-            <a class="card__detail" href="#">подробнее</a>
-            <a class="card__reserve" href="#">забронировать</a>
           </div>
-        </div>
-        <div class="card__rating rating">
-          <p class="rating__in-stars rating__in-stars--three">три звезды</p>
-          <p class="rating__text">рейтинг: 8,9</p>
-        </div>
-      </li>
-      <li class="result__item card">
-        <img class="card__foto" src="img/poco_diablo.jpg" width="135" height="90" alt="">
-        <div class="card__description">
-          <h3 class="card__name">Villas at Poco Diablo</h3>
-          <p><span class="card__type">апартаменты</span><span class="card__min-cost">от 2000 р.</span></p>
-          <div class="card__buttons">
-            <a class="card__detail" href="#">подробнее</a>
-            <a class="card__reserve" href="#">забронировать</a>
-          </div>
-        </div>
-        <div class="card__rating rating">
-          <p class="rating__in-stars rating__in-stars--two">две звезды</p>
-          <p class="rating__text">рейтинг: 9,2</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-</main>
-<footer class="page-footer">
-  <p class="page-footer__hash">#visitsedona</p>
-  <ul class="page-footer__social social-list">
-    <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="#" aria-label="instagram"></a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="#" aria-label="facebook"></a></li>
-    <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#" aria-label="youtube"></a></li>
-  </ul>
-  <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by <span class="visually-hidden">html academy</span></a>
-</footer>
+        </header>
+        <ul class="result__list">
+          <li class="result__item card">
+            <img class="card__foto" src="img/amara_resort.jpg" width="135" height="90" alt="">
+            <div class="card__description">
+              <h3 class="card__name"><a class="card__link" href="#">Amara Resort & Spa</a></h3>
+              <p class="card__info"><span class="card__type">гостиница</span><span
+                class="card__min-cost">от 4000 р.</span></p>
+              <div class="card__buttons">
+                <a class="card__button card__button--detail" href="#">подробнее</a>
+                <a class="card__button card__button--reserve" href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="card__rating rating">
+              <p class="rating__in-stars rating__in-stars--four ally-text">четыре звезды</p>
+              <p class="rating__text">рейтинг: 8,5</p>
+            </div>
+          </li>
+          <li class="result__item card">
+            <img class="card__foto" src="img/quail_inn.jpg" width="135" height="90" alt="">
+            <div class="card__description">
+              <h3 class="card__name"><a class="card__link" href="#">Desert Quail Inn</a></h3>
+              <p class="card__info"><span class="card__type">мотель</span><span class="card__min-cost">от 3000 р.</span>
+              </p>
+              <div class="card__buttons">
+                <a class="card__button card__button--detail" href="#">подробнее</a>
+                <a class="card__button card__button--reserve" href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="card__rating rating">
+              <p class="rating__in-stars rating__in-stars--three ally-text">три звезды</p>
+              <p class="rating__text">рейтинг: 8,9</p>
+            </div>
+          </li>
+          <li class="result__item card">
+            <img class="card__foto" src="img/poco_diablo.jpg" width="135" height="90" alt="">
+            <div class="card__description">
+              <h3 class="card__name"><a class="card__link" href="#">Villas at Poco Diablo</a></h3>
+              <p class="card__info"><span class="card__type">апартаменты</span><span
+                class="card__min-cost">от 2000 р.</span></p>
+              <div class="card__buttons">
+                <a class="card__button card__button--detail" href="#">подробнее</a>
+                <a class="card__button card__button--reserve" href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="card__rating rating">
+              <p class="rating__in-stars rating__in-stars--two ally-text"> две звезды</p>
+              <p class="rating__text">рейтинг: 9,2</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__hash">#visitsedona</p>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item"><a class="social-list__link ally-text" href="#">
+          <svg enable-background="new 0 0 17 15" height="15" viewBox="0 0 17 15" width="17"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="m10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708-.004.861-.522 1.513-.857 1.768.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082-.522 0 .075 0-.446 0-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119-1.2-.856-2.531-1.573-2.457-3.773.285.328 1.067.536 1.34.472-.703-.241-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z"
+              fill="#fff"/>
+          </svg>
+          twitter</a></li>
+        <li class="social-list__item"><a class="social-list__link social-list__link--fb ally-text" href="#">
+          <svg enable-background="new 0 0 12 22" height="22" viewBox="0 0 12 22" width="12"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="m12 4v-4h-4c-2.209 0-4 1.791-4 4v4h-4v4h4v10h4v-10h4v-4h-4v-4z" fill="#fff"/>
+          </svg>
+          facebook</a></li>
+        <li class="social-list__item"><a class="social-list__link social-list__link--youtube ally-text" href="#">
+          <svg enable-background="new 0 0 20 16" height="16" viewBox="0 0 20 16" width="20"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="m17 0h-14c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3zm-10.973 11.998v-7.996l8.987 3.998z"
+              fill="#fff"/>
+          </svg>
+          youtube</a></li>
+      </ul>
+      <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by <span
+        class="visually-hidden">html academy</span></a>
+    </footer>
+  </div>
 </body>
 </html>
 
