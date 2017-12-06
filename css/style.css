@@ -344,17 +344,16 @@ body {
   display: block;
 }
 
-@keyframes bounce {
+@keyframes twist {
   0% { transform: translateX(-50%) scale(0.1, 0.1) rotate(100deg);}
   65% { transform: translateX(-50%) scale(1, 1) rotate(360deg);}
   75% { transform: translateX(-50%) scale(1, 1) rotate(366deg);}
   100% { transform: translateX(-50%) scale(1, 1) rotate(358deg); }
 }
 
-@keyframes shake {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-60%) translateY(-50%); }
-  20%, 40%, 60%, 80% { transform: translateX(-40%) translateY(-50%); }
+@keyframes blink {
+  0%, 30%, 60%, 90% { border-color: #f2f2f2; }
+  15%, 45%, 75%, 95%, 100% { border-color: tomato; }
 }
 
 /* модуль form-modal*/
@@ -377,13 +376,13 @@ body {
 
 .form-modal--show {
   display: flex;
-  animation: bounce;
+  animation: twist;
   animation-duration: 0.6s;
   animation-timing-function: ease-out;
 }
 
-.form-modal--error{
-  animation-name: shake;
+.form-modal__input--error{
+  animation-name: blink;
   animation-duration: 0.6s;
 }
 
