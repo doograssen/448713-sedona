@@ -8,6 +8,7 @@ var input = popup.querySelectorAll('.form-modal__input');
 var checkIn = popup.querySelector('#check-in');
 var checkOut = popup.querySelector('[name=check-out]');
 var adult = popup.querySelector('[name=adult]');
+var kids = popup.querySelector('[name=kids]');
 var button = popup.querySelectorAll('.form-modal__button');
 
 showPopupBtn.addEventListener('click', function (evt) {
@@ -58,6 +59,7 @@ window.onload = function () {
   checkOut.placeholder = setInputDate(true);
   checkOut.value = setInputDate(true);
   adult.value = 2;
+  kids.value = 0;
 };
 
 window.addEventListener('keydown', function (evt) {
