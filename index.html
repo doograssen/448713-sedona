@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="page__container">
@@ -17,13 +17,13 @@
           </li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="media.html">фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__empty"></li>
+          <li class="main-nav__item main-nav__placeholder"></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="state-map.html">карта штата</a>
           </li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="hotels.html">гостиницы</a></li>
         </ul>
       </nav>
-      <h1 class="page-header__title visually-hidden">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
+      <h1 class="page-header__title ally-text">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
     </header>
     <main class="page-main">
       <section class="page-main__section advantages">
@@ -77,6 +77,7 @@
         седоне</span></p>
         <button class="hotel-search__button">поиск гостиницы в седоне</button>
         <div class="hotel-search__container">
+	        <a class="hotel-search__map-link" href="#"><img src="img/map.jpg" alt="Карта" width="1200" height="593"></a>
           <form class="hotel-search__form form-modal" action="https://echo.htmlacademy.ru" method="get">
             <div class="form-modal__field">
               <label class="form-modal__label" for="check-in">дата заезда:</label>
@@ -116,7 +117,6 @@
             </div>
             <input class="form-modal__submit" type="submit" value="найти">
           </form>
-          <a class="hotel-search__map-link" href="#"><img src="img/map.jpg" alt="Карта" width="1200" height="593"></a>
         </div>
       </section>
     </main>
@@ -149,6 +149,6 @@
         class="visually-hidden">html academy</span></a>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

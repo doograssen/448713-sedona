@@ -48,11 +48,6 @@ body {
 
 .page-header--index {
   min-height: 564px;
-  background: linear-gradient(to bottom right, #8ba8bd, #4a413f);
-  background-image: url("../img/welcome.png"), url("../img/header_photo_full.jpg");
-  background-position: 50% 132px, center 10%;
-  background-size: auto auto, 100% auto;
-  background-repeat: no-repeat;
 }
 
 .page-header--index::after {
@@ -63,11 +58,19 @@ body {
   display: block;
   width: 100%;
   height: 57px;
-
   background-image: url("../img/profile.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left;
+}
+
+.page-header__title {
+  height: 508px;
+  background-image: url("../img/welcome.png"), url("../img/header_photo_full.jpg");
+  background-color: #81b3d2;
+  background-size: auto auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 50%, center 28%;
 }
 
 /* блок main-nav */
@@ -199,8 +202,8 @@ body {
   position: absolute;
   top: 0;
   left: 100%;
-  background: linear-gradient(to bottom right, #f8f8f9, #8c726a);
   background-image: url("../img/city.jpg");
+  background-color: #81b3d2;
   background-size: 100% auto;
   background-position: 0 55%;
 }
@@ -220,8 +223,8 @@ body {
   position: absolute;
   top: 0;
   right: 100%;
-  background: linear-gradient(to bottom right, #b0bfdd, #bc7b63);
   background-image: url("../img/bridge.jpg");
+  background-color: #81b3d2;
   background-size: 100% auto;
   background-position: 0 52%;
 }
@@ -357,11 +360,20 @@ body {
 .hotel-search__container {
   position: relative;
   overflow: hidden;
+  height: 593px;
+  background-color: #dee7cb;
+}
+
+.hotel-search__map-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
 }
 
 .hotel-search__map-link img{
-  background-color: #dee7cb;
-  display: block;
+  transform: translate(-50%, -50%);
+  /* display: block;*/
 }
 
 @keyframes twist {
@@ -380,7 +392,7 @@ body {
 .form-modal {
   display: none;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -578,8 +590,8 @@ body {
 .hotel-filter {
   color: #ffffff;
   min-height: 217px;
-  background: linear-gradient(to bottom right,#668192, #565253);
   background-image: url("../img/filter_photo.jpg");
+  background-color: #8c726a;
 }
 
 .hotel-filter__form {
@@ -897,10 +909,6 @@ body {
   fill: #81b3d2;
 }
 
-/*.sorting__route--desc {
-  background-image: url("../img/icon-down.svg");
-}*/
-
 /* блок card*/
 .card {
   display: flex;
@@ -1153,4 +1161,3 @@ body {
 .social-list__link:active {
   background-color: #5496bd;
 }
-
