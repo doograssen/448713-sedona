@@ -8,26 +8,16 @@ var input = popup.querySelectorAll('.form-modal__input');
 var checkIn = popup.querySelector('#check-in');
 var checkOut = popup.querySelector('[name=check-out]');
 var adult = popup.querySelector('[name=adult]');
-var kids = popup.querySelector('[name=kids]');
+//var kids = popup.querySelector('[name=kids]');
 var button = popup.querySelectorAll('.form-modal__button');
 
 showPopupBtn.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.add('form-modal--show');
-  for (var i = 0; i < button.length; i++) {
-    if (!button[i].classList.contains('form-modal__button--calendar')) {
-      button[i].addEventListener('click', function(evt) {
-        if (this.classList.contains('form-modal__button--minus')) {
-          var value = this.nextElementSibling.value;
-          var inputElement = this.nextElementSibling;
-          inputElement.value = (value !== '0') ? +value - 1 : value;
-        } else if (this.classList.contains('form-modal__button--plus')) {
-          var value = this.previousElementSibling.value;
-          var inputElement = this.previousElementSibling;
-          inputElement.value = (value < 10) ? +value + 1 : value;
-        }
-      });
-    }
+  if (popup.classList.contains('form-modal--hide')) {
+    popup.classList.remove('form-modal--hide');
+    popup.classList.add('form-modal--show');
+  } else if (popup.classList.contains('form-modal--show')) {
+    popup.classList.remove('form-modal--show');
+    popup.classList.add('form-modal--hide');
   }
 });
 
@@ -48,24 +38,41 @@ popup.addEventListener('submit', function (evt) {
 function setInputDate(mod) {
   var date = new Date();
   var day = date.getDate();
-  var formatDate = (!mod ? day : day + 1) + ' ' + MONTH[date.getMonth()] + ' ' + date.getFullYear();
-  return formatDate;
+  return (!mod ? day : day + 1) + ' ' + MONTH[date.getMonth()] + ' ' + date.getFullYear();
 }
 
 window.onload = function () {
-  console.log(checkIn.placeholder);
+  popup.classList.add('form-modal--hide');
   checkIn.placeholder = setInputDate(false);
-  checkIn.value = setInputDate(false);
+  //checkIn.value = setInputDate(false);
   checkOut.placeholder = setInputDate(true);
-  checkOut.value = setInputDate(true);
+  /*checkOut.value = setInputDate(true);
   adult.value = 2;
-  kids.value = 0;
+  kids.value = 0;*/
+  var value;
+  var inputElement;
+  for (var i = 0; i < button.length; i++) {
+    if (!button[i].classList.contains('form-modal__button--calendar')) {
+      button[i].addEventListener('click', function() {
+        if (this.classList.contains('form-modal__button--minus')) {
+          value = this.nextElementSibling.value;
+          inputElement = this.nextElementSibling;
+          inputElement.value = (value !== '0') ? +value - 1 : value;
+        } else if (this.classList.contains('form-modal__button--plus')) {
+          value = this.previousElementSibling.value;
+          inputElement = this.previousElementSibling;
+          inputElement.value = (value < 10) ? +value + 1 : value;
+        }
+      });
+    }
+  }
 };
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === ESC_CODE) {
     if (popup.classList.contains('form-modal--show')) {
       popup.classList.remove('form-modal--show');
+      popup.classList.add('form-modal--hide')
     }
   }
 });
