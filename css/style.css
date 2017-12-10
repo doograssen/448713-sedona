@@ -613,14 +613,14 @@ body {
 }
 
 .hotel-filter__block {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   margin-top: 27px;
   padding-left: 6%;
   padding-right: 4%;
   min-width: 242px;
+  /*flex-shrink: 0;*/
   box-sizing: border-box;
-  border: none;
 }
 
 .hotel-filter__container {
@@ -638,6 +638,9 @@ body {
 }
 
 .hotel-filter__label {
+  /*flex-basis: 100px;
+  flex-shrink: 0;*/
+  display: block;
   position: relative;
   font-size: 14px;
   line-height: 21px;
