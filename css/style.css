@@ -619,6 +619,7 @@ body {
   padding-left: 6%;
   padding-right: 4%;
   min-width: 242px;
+  flex-shrink: 0;
   box-sizing: border-box;
   border: none;
 }
