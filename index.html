@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="page__container">
     <header class="page-header page-header--index">
+      <a class="page-header__link ally-text" href="index.html">На главную<img class = "page-header__logo" src="img/logo.png" width="138" height="70" alt="Логотип"></a>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="information.html">информация</a>
           </li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--left" href="media.html">фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--logo"><img src="img/logo.png" width="138"
-                                                               height="70" alt="Логотип"></li>
+          <li class="main-nav__item main-nav__placeholder"></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="state-map.html">карта штата</a>
           </li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--right" href="hotels.html">гостиницы</a></li>
         </ul>
       </nav>
-      <h1 class="page-header__title visually-hidden">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
+      <h1 class="page-header__title ally-text">Welcome to the gorgerous Sedona! Because the Grand Canyon sucks!</h1>
     </header>
     <main class="page-main">
       <section class="page-main__section advantages">
@@ -55,7 +55,7 @@
           <li class="advantages__item feature">
             <h3 class="feature__title">небольшая площадь</h3>
             <span class="feature__number">&mdash; №3 &mdash;</span>
-            <p class="feature__description">все достопримечательности находятся очень близко</p>
+            <p class="feature__description">все достопримеча-тельности находятся очень близко</p>
           </li>
           <li class="advantages__item feature">
             <h3 class="feature__title">красивая дорога</h3>
@@ -77,17 +77,16 @@
         седоне</span></p>
         <button class="hotel-search__button">поиск гостиницы в седоне</button>
         <div class="hotel-search__container">
-          <form action="https://echo.htmlacademy.ru" class="hotel-search__form form-modal">
+	        <a class="hotel-search__map-link" href="#"><img src="img/map.jpg" alt="Карта" width="1200" height="593"></a>
+          <form class="hotel-search__form form-modal" action="https://echo.htmlacademy.ru" method="get">
             <div class="form-modal__field">
               <label class="form-modal__label" for="check-in">дата заезда:</label>
-              <input class="form-modal__input" id="check-in" name="check-in" type="text" placeholder="24 Апреля 2017"
-                     required>
+              <input class="form-modal__input" id="check-in" name="check-in" type="text" placeholder="24 Апреля 2017">
               <button class="form-modal__button form-modal__button--calendar ally-text" type="button">календарь</button>
             </div>
             <div class="form-modal__field">
               <label class="form-modal__label" for="check-out">дата выезда:</label>
-              <input class="form-modal__input" id="check-out" name="check-out" type="text" placeholder="4 июля 2017"
-                     required>
+              <input class="form-modal__input" id="check-out" name="check-out" type="text" placeholder="4 июля 2017">
               <button class="form-modal__button form-modal__button--calendar ally-text" type="button">календарь</button>
             </div>
             <div class="form-modal__field">
@@ -118,7 +117,6 @@
             </div>
             <input class="form-modal__submit" type="submit" value="найти">
           </form>
-          <a class="hotel-search__map-link" href="#"><img src="img/map.jpg" alt="Карта" width="1200" height="593"></a>
         </div>
       </section>
     </main>
@@ -142,15 +140,15 @@
         <li class="social-list__item"><a class="social-list__link social-list__link--youtube ally-text" href="#">
           <svg enable-background="new 0 0 20 16" height="16" viewBox="0 0 20 16" width="20"
                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-              d="m17 0h-14c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3zm-10.973 11.998v-7.996l8.987 3.998z"
+            <path d="m17 0h-14c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3zm-10.973 11.998v-7.996l8.987 3.998z"
               fill="#fff"/>
           </svg>
           youtube</a></li>
       </ul>
-      <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss">website by <span
+	    <a class="page-footer__develop-by" href="https://htmlacademy.ru/intensive/htmlcss"><span class = "page-footer__dev-promo">website by</span><span
         class="visually-hidden">html academy</span></a>
     </footer>
   </div>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
