@@ -726,8 +726,7 @@ body {
 }
 
 .hotel-filter__input:-ms-input-placeholder {
-  opacity: 0.5;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hotel-filter__input:focus::-webkit-input-placeholder {
