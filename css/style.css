@@ -10,7 +10,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
-
 }
 
 .page__container {
@@ -696,6 +695,7 @@ body {
 }
 
 .hotel-filter__input {
+  font-family: "PT Sans", Tahoma, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -711,19 +711,22 @@ body {
 }
 
 .hotel-filter__input::-webkit-input-placeholder {
-  font-family: "PT Sans", Tahoma, sans-serif;
   color: #ffffff;
+  opacity: 0.5;
 }
 
 .hotel-filter__input::-moz-placeholder {
+  opacity: 0.5;
   color: #ffffff;
 }
 
 .hotel-filter__input:-moz-placeholder {
+  opacity: 0.5;
   color: #ffffff;
 }
 
 .hotel-filter__input:-ms-input-placeholder {
+  opacity: 0.5;
   color: #ffffff;
 }
 
@@ -742,7 +745,6 @@ body {
 .hotel-filter__input:focus:-ms-input-placeholder {
   color: transparent;
 }
-
 
 .hotel-filter__input--min {
   border-top-left-radius: 3px;
