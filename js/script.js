@@ -3,6 +3,11 @@ var MONTH = ['января', 'февраля', 'марта', 'апреля', 'м
   'октября', 'ноября', 'декабря'];
 var showPopupBtn = document.querySelector('.hotel-search__button');
 var popup = document.querySelector('.form-modal');
+var mapLink = document.querySelector('.hotel-search__map-link');
+var mapContainer = document.querySelector('.hotel-search__interactive');
+var googleMap = mapContainer.querySelector('.hotel-search__map');
+var closeBtn = mapContainer.querySelector('.hotel-search__close-map');
+var overlay = document.querySelector('.page__container');
 /*var close = document.querySelector('.form-close');*/
 var input = popup.querySelectorAll('.form-modal__input');
 var checkIn = popup.querySelector('#check-in');
@@ -34,7 +39,6 @@ popup.addEventListener('submit', function (evt) {
   }
 });
 
-
 function setInputDate(mod) {
   var date = new Date();
   var day = date.getDate();
@@ -57,11 +61,11 @@ window.onload = function () {
         if (this.classList.contains('form-modal__button--minus')) {
           value = this.nextElementSibling.value;
           inputElement = this.nextElementSibling;
-          inputElement.value = (value !== '0') ? +value - 1 : value;
+          inputElement.value = ((value !== '0') && (value !== '')) ? +value - 1 : value;
         } else if (this.classList.contains('form-modal__button--plus')) {
           value = this.previousElementSibling.value;
           inputElement = this.previousElementSibling;
-          inputElement.value = (value < 10) ? +value + 1 : value;
+          inputElement.value = ((value < 10) || (value !== '')) ? +value + 1 : value;
         }
       });
     }
@@ -76,3 +80,31 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+mapLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (!mapContainer.classList.contains('hotel-search__interactive--show')) {
+    mapContainer.classList.add('hotel-search__interactive--show');
+    overlay.classList.add('page__container--overlay');
+    initMap();
+  }
+});
+
+closeBtn.addEventListener('click', function(){
+  mapContainer.classList.remove('hotel-search__interactive--show');
+  overlay.classList.remove('page__container--overlay');
+});
+
+function initMap() {
+  var myLatLng = {lat: 34.870750, lng: -111.762161};
+  var map = new google.maps.Map(googleMap, {
+    zoom: 10,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Welcome in Sedona!'
+  });
+}
