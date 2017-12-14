@@ -4,16 +4,11 @@ var MONTH = ['января', 'февраля', 'марта', 'апреля', 'м
 var showPopupBtn = document.querySelector('.hotel-search__button');
 var popup = document.querySelector('.form-modal');
 var mapLink = document.querySelector('.hotel-search__map-link');
-var mapContainer = document.querySelector('.hotel-search__interactive');
-var googleMap = mapContainer.querySelector('.hotel-search__map');
-var closeBtn = mapContainer.querySelector('.hotel-search__close-map');
-var overlay = document.querySelector('.page__container');
-/*var close = document.querySelector('.form-close');*/
+var googleMap = mapLink.querySelector('.hotel-search__map');
 var input = popup.querySelectorAll('.form-modal__input');
 var checkIn = popup.querySelector('#check-in');
 var checkOut = popup.querySelector('[name=check-out]');
 var adult = popup.querySelector('[name=adult]');
-//var kids = popup.querySelector('[name=kids]');
 var button = popup.querySelectorAll('.form-modal__button');
 
 showPopupBtn.addEventListener('click', function (evt) {
@@ -48,11 +43,7 @@ function setInputDate(mod) {
 window.onload = function () {
   popup.classList.add('form-modal--hide');
   checkIn.placeholder = setInputDate(false);
-  //checkIn.value = setInputDate(false);
   checkOut.placeholder = setInputDate(true);
-  /*checkOut.value = setInputDate(true);
-  adult.value = 2;
-  kids.value = 0;*/
   var value;
   var inputElement;
   for (var i = 0; i < button.length; i++) {
@@ -83,16 +74,6 @@ window.addEventListener('keydown', function (evt) {
 
 mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
-  if (!mapContainer.classList.contains('hotel-search__interactive--show')) {
-    mapContainer.classList.add('hotel-search__interactive--show');
-    overlay.classList.add('page__container--overlay');
-    initMap();
-  }
-});
-
-closeBtn.addEventListener('click', function(){
-  mapContainer.classList.remove('hotel-search__interactive--show');
-  overlay.classList.remove('page__container--overlay');
 });
 
 function initMap() {

@@ -379,74 +379,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.hotel-search__interactive {
-  position: fixed;
-  z-index: 40;
-  top: 50%;
-  left: 50%;
-  display: none;
-  width: 90%;
-  height: 500px;
-  background-color: #ffffff;
-  border: 5px solid #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000000;
-  box-sizing: border-box;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.hotel-search__interactive--show {
-  display: block;
-}
-
 .hotel-search__map {
   width: 100%;
-  height: 100%;
+  min-height: 474px;
 }
-
-.hotel-search__close-map {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 0;
-  top: -45px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-.hotel-search__close-map::before,
-.hotel-search__close-map::after{
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  height: 8px;
-  width: 40px;
-  background-color: #FF6347;
-  border-radius: 3px;
-}
-
-.hotel-search__close-map::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.hotel-search__close-map::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.hotel-search__close-map:hover::after,
-.hotel-search__close-map:hover::before {
-  background-color: #FF3025;
-}
-/*@keyframes twist {
-  0% { transform: translateX(-50%) scale(0.1, 0.1) rotate(100deg);}
-  65% { transform: translateX(-50%) scale(1, 1) rotate(360deg);}
-  75% { transform: translateX(-50%) scale(1, 1) rotate(366deg);}
-  100% { transform: translateX(-50%) scale(1, 1) rotate(358deg); }
-}*/
 
 @keyframes drop {
   0% {
